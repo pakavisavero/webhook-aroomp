@@ -1,6 +1,9 @@
 from django.urls import path
-from api.views import get_webhook
+from api import views
 
 urlpatterns = [
-    path('webhook', get_webhook),
+    path('get_good_receive', views.get_good_receive),
+    path('get_delivery_order', views.get_delivery_order),
+    path('get_stock_transfer', views.get_stock_transfer),
+    path('get_receiving', views.get_receiving),
 ]
